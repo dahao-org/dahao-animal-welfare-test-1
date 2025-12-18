@@ -54,9 +54,13 @@
       "Learned helplessness",
       "Reduced lifespan compared to natural",
       "Abnormal behavior patterns",
-      "Immune suppression"
+      "Immune suppression",
+      "Emotional fever (stress-induced hyperthermia) [Tier B+]"
     ],
-    "duration": "Persisting beyond immediate stimulus"
+    "duration": "Persisting beyond immediate stimulus",
+    "_meta": {
+      "updated": "2023-10-27"
+    }
   },
   "@welfare": {
     "version": "1.0.0",
