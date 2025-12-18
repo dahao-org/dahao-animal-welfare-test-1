@@ -1,13 +1,6 @@
 {
   "_meta": {
-    "type": "terms",
-    "domain": "animal-welfare-test-1",
-    "inherits": "dahao-org/core-test-1 v1.0.0",
-    "purpose": "Minimize animal suffering through evidence-based ethics",
-    "description": "Animal welfare vocabulary extending DAHAO Core terms.",
-    "version": "1.0.0",
-    "created": "2024-12-13",
-    "updated": "2024-12-13"
+    "updated": "2023-11-20"
   },
   "@sentience": {
     "version": "1.0.0",
@@ -38,24 +31,15 @@
       "HIGH": "Multiple strong indicators across categories",
       "MEDIUM": "Some indicators present, others uncertain",
       "LOW": "Few indicators, mostly behavioral",
-      "UNKNOWN": "Insufficient evidence — apply precautionary principle"
+      "UNKNOWN": "Insufficient evidence \u2014 apply precautionary principle"
     },
     "source": "Cambridge Declaration on Consciousness (2012)"
   },
   "@suffering": {
-    "version": "1.0.0",
-    "definition": "A prolonged negative affective state involving distress, pain, or deprivation. Distinct from brief acute pain.",
     "indicators": [
-      "Elevated cortisol (chronic, not acute)",
-      "Stereotypies (repetitive purposeless behavior)",
-      "Self-mutilation",
-      "Learned helplessness",
-      "Reduced lifespan compared to natural",
-      "Abnormal behavior patterns",
-      "Immune suppression"
+      "Emotional fever (stress-induced hyperthermia) (Tier B+ physiological studies)"
     ],
-    "duration": "Persisting beyond immediate stimulus",
-    "note": "Suffering is what we aim to minimize. See @purpose."
+    "version": "1.0.1"
   },
   "@welfare": {
     "version": "1.0.0",
