@@ -1,0 +1,186 @@
+{
+  "_meta": {
+    "type": "terms",
+    "domain": "animal-welfare",
+    "inherits": "dahao-org/core v1.0.0",
+    "purpose": "Minimize animal suffering through evidence-based ethics",
+    "description": "Animal welfare vocabulary extending DAHAO Core terms.",
+    "version": "1.0.0",
+    "created": "2024-12-13",
+    "updated": "2024-12-13"
+  },
+
+  "@sentience": {
+    "version": "1.0.0",
+    "definition": "The capacity to have subjective experiences and feel valenced states such as pain, pleasure, or emotions.",
+    "indicators": {
+      "neurological": [
+        "Nociceptors (pain receptors)",
+        "Opioid receptors",
+        "Central nervous system integration",
+        "Brain structures associated with emotion"
+      ],
+      "behavioral": [
+        "Pain avoidance learning",
+        "Protective behavior when injured",
+        "Trade-off decisions (accepting cost to avoid pain)",
+        "Play behavior",
+        "Tool use",
+        "Problem solving"
+      ],
+      "physiological": [
+        "Stress hormone response (cortisol, corticosterone)",
+        "Emotional fever (stress-induced hyperthermia)",
+        "Wound guarding",
+        "Appetite suppression under stress"
+      ]
+    },
+    "confidence_levels": {
+      "HIGH": "Multiple strong indicators across categories",
+      "MEDIUM": "Some indicators present, others uncertain",
+      "LOW": "Few indicators, mostly behavioral",
+      "UNKNOWN": "Insufficient evidence — apply precautionary principle"
+    },
+    "source": "Cambridge Declaration on Consciousness (2012)"
+  },
+
+  "@suffering": {
+    "version": "1.0.0",
+    "definition": "A prolonged negative affective state involving distress, pain, or deprivation. Distinct from brief acute pain.",
+    "indicators": [
+      "Elevated cortisol (chronic, not acute)",
+      "Stereotypies (repetitive purposeless behavior)",
+      "Self-mutilation",
+      "Learned helplessness",
+      "Reduced lifespan compared to natural",
+      "Abnormal behavior patterns",
+      "Immune suppression"
+    ],
+    "duration": "Persisting beyond immediate stimulus",
+    "note": "Suffering is what we aim to minimize. See @purpose."
+  },
+
+  "@welfare": {
+    "version": "1.0.0",
+    "definition": "The physical and psychological state of an animal in relation to its ability to cope with its environment and express natural behaviors.",
+    "components": [
+      "Physical health (absence of disease, injury)",
+      "Psychological wellbeing (absence of chronic stress)",
+      "Natural behavior expression (ability to perform species-typical behaviors)"
+    ],
+    "assessment": "Measured through @suffering indicators, @five_freedoms compliance, and species-specific needs."
+  },
+
+  "@nociception": {
+    "version": "1.0.0",
+    "definition": "The sensory nervous system's response to potentially harmful stimuli, detected by nociceptors.",
+    "relationship_to_pain": "Nociception is the mechanism; pain is the subjective experience. Nociception can occur without conscious pain, but presence of nociceptors suggests pain capacity.",
+    "evidence_value": "Presence of nociceptors is strong evidence for potential sentience.",
+    "note": "Per @precautionary_principle, nociceptor presence triggers protection."
+  },
+
+  "@stress_indicators": {
+    "version": "1.0.0",
+    "definition": "Measurable biological markers indicating physiological or psychological distress.",
+    "markers": {
+      "hormonal": ["Cortisol levels", "Corticosterone", "Adrenaline"],
+      "physiological": ["Heart rate variability", "Immune function", "Body temperature"],
+      "behavioral": ["Stereotypies", "Aggression", "Withdrawal", "Abnormal postures"]
+    },
+    "thresholds": {
+      "acute_stress": "Temporary elevation, returns to baseline",
+      "chronic_stress": "Sustained elevation (>24h) or repeated acute episodes"
+    }
+  },
+
+  "@five_freedoms": {
+    "version": "1.0.0",
+    "definition": "Five fundamental welfare requirements for animals under human care.",
+    "freedoms": [
+      {
+        "name": "freedom_from_hunger_thirst",
+        "description": "Ready access to fresh water and diet to maintain health and vigor"
+      },
+      {
+        "name": "freedom_from_discomfort",
+        "description": "Appropriate environment including shelter and comfortable resting area"
+      },
+      {
+        "name": "freedom_from_pain_injury_disease",
+        "description": "Prevention or rapid diagnosis and treatment"
+      },
+      {
+        "name": "freedom_to_express_normal_behavior",
+        "description": "Sufficient space, proper facilities, and company of animal's own kind"
+      },
+      {
+        "name": "freedom_from_fear_distress",
+        "description": "Conditions and treatment avoiding mental suffering"
+      }
+    ],
+    "source": "Farm Animal Welfare Council (1979)",
+    "evolution_note": "Can be extended (add freedoms) but not reduced per @protection_asymmetry"
+  },
+
+  "@species_profile": {
+    "version": "1.0.0",
+    "definition": "Comprehensive documentation of a species' sentience evidence, welfare requirements, and relevant research.",
+    "required_fields": [
+      "common_name",
+      "scientific_name",
+      "sentience_evidence",
+      "sentience_confidence",
+      "welfare_requirements",
+      "sources"
+    ],
+    "optional_fields": [
+      "natural_behaviors",
+      "social_needs",
+      "lifespan_wild",
+      "lifespan_captivity",
+      "known_stressors"
+    ],
+    "storage": "data/species/{name}.json"
+  },
+
+  "@practice": {
+    "version": "1.0.0",
+    "definition": "A human activity that affects animal welfare, subject to ethical assessment.",
+    "required_fields": [
+      "name",
+      "description",
+      "target_species",
+      "biological_impacts",
+      "ethical_verdict",
+      "sources"
+    ],
+    "verdict_options": ["ETHICAL", "UNETHICAL", "COMPLEX", "UNKNOWN"],
+    "storage": "data/practices/{name}.json"
+  },
+
+  "@ethical_verdict": {
+    "version": "1.0.0",
+    "definition": "Assessment of a practice's alignment with animal welfare principles.",
+    "options": {
+      "ETHICAL": "Does not violate welfare principles; acceptable practice",
+      "UNETHICAL": "Violates one or more welfare principles; should be eliminated",
+      "COMPLEX": "Mixed impacts; requires context and mitigation",
+      "UNKNOWN": "Insufficient evidence; apply precautionary principle"
+    },
+    "determination": "Based on @five_freedoms compliance, @suffering indicators, and @biological_primacy"
+  },
+
+  "@biological_impact": {
+    "version": "1.0.0",
+    "definition": "Measurable effects of a practice on animal biology and behavior.",
+    "categories": [
+      "Pain/injury",
+      "Stress response",
+      "Behavioral restriction",
+      "Social disruption",
+      "Lifespan effect",
+      "Disease/pathology"
+    ],
+    "evidence_required": "Claims about biological impact require evidence per @evidence_based"
+  }
+}

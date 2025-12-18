@@ -1,0 +1,93 @@
+{
+  "_meta": {
+    "type": "species_profile",
+    "version": "1.0.0",
+    "created": "2024-12-13",
+    "updated": "2024-12-13",
+    "status": "accepted",
+    "proposal": "Initial seed data"
+  },
+
+  "common_name": "Octopus",
+  "scientific_name": "Octopus vulgaris",
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Mollusca",
+    "class": "Cephalopoda",
+    "order": "Octopoda"
+  },
+
+  "sentience_evidence": {
+    "neurological": [
+      "Complex nervous system with approximately 500 million neurons",
+      "Nociceptors present throughout body",
+      "Decentralized neural processing with semi-autonomous arms"
+    ],
+    "behavioral": [
+      "Demonstrates problem-solving abilities",
+      "Shows play behavior",
+      "Exhibits wound guarding (protective behavior when injured)",
+      "Capable of observational learning",
+      "Uses tools (coconut shell shelters)"
+    ],
+    "physiological": [
+      "Shows avoidance learning after painful stimuli",
+      "Prolonged grooming of injured sites",
+      "Altered behavior patterns after noxious experiences"
+    ]
+  },
+
+  "sentience_confidence": "HIGH",
+  "sentience_confidence_justification": "Multiple strong indicators across neurological, behavioral, and physiological categories",
+
+  "welfare_requirements": [
+    "Environmental enrichment (objects to manipulate, puzzles)",
+    "Hiding spaces (dens, shelters)",
+    "Appropriate water quality and temperature",
+    "Adequate space for movement and exploration",
+    "If used for food: humane slaughter methods required",
+    "Social consideration: generally solitary but needs stimulation"
+  ],
+
+  "natural_behaviors": [
+    "Hunting and foraging",
+    "Den building",
+    "Camouflage and color change",
+    "Exploration",
+    "Problem-solving"
+  ],
+
+  "lifespan": {
+    "wild": "1-5 years depending on species",
+    "captivity": "Similar when welfare maintained"
+  },
+
+  "known_stressors": [
+    "Barren environments",
+    "Lack of hiding spaces",
+    "Inappropriate handling",
+    "Poor water quality",
+    "Social housing with aggressive conspecifics"
+  ],
+
+  "protection_status": "PROTECTED",
+  "protection_rationale": "High sentience confidence based on extensive evidence",
+
+  "sources": [
+    {
+      "citation": "Crook, R.J. (2014). The welfare of invertebrate animals in research. ILAR Journal.",
+      "tier": "A",
+      "url": "https://doi.org/10.1093/ilar/ilu012"
+    },
+    {
+      "citation": "Mather, J.A., & Dickel, L. (2017). Cephalopod complex cognition. Current Opinion in Behavioral Sciences.",
+      "tier": "A",
+      "url": "https://doi.org/10.1016/j.cobeha.2017.06.008"
+    },
+    {
+      "citation": "Birch, J. et al. (2021). Review of the Evidence of Sentience in Cephalopod Molluscs. LSE Report.",
+      "tier": "B",
+      "url": "https://www.lse.ac.uk/News/News-Assets/PDFs/2021/Sentience-in-Cephalopod-Molluscs-and-Decapod-Crustaceans-Final-Report-November-2021.pdf"
+    }
+  ]
+}

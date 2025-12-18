@@ -1,0 +1,6 @@
+# Species Profiles
+# 
+# Each file documents a species' sentience evidence and welfare requirements.
+# Format: {species_name}.json
+#
+# See CONTRIBUTING.md for how to add species.

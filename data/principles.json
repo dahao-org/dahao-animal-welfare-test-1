@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "type": "principles",
+    "domain": "animal-welfare",
+    "inherits": "dahao-org/core v1.1.0",
+    "purpose": "Minimize animal suffering through evidence-based ethics",
+    "description": "Ethical principles for animal welfare, extending core principles.",
+    "version": "1.1.0",
+    "created": "2024-12-13",
+    "updated": "2024-12-13",
+    "note": "All core locked principles automatically apply. Domain principles add specificity. Principles reference terms via 'uses_terms'."
+  },
+
+  "_inherited_locked": [
+    "@purpose_primacy",
+    "@democratic_evolution",
+    "@transparency",
+    "@precautionary_default",
+    "@protection_asymmetry",
+    "@inheritance_integrity"
+  ],
+
+  "@precautionary_principle": {
+    "version": "1.0.0",
+    "statement": "In the absence of scientific certainty regarding an animal's capacity to suffer, assume that capacity exists and provide protection.",
+    "locked": true,
+    "lock_reason": "Foundational to animal welfare ethics. Implements core @precautionary_default for this domain.",
+    "uses_terms": ["@sentience", "@suffering", "@protection"],
+    "application": [
+      "When sentience evidence is uncertain → assume sentience",
+      "When pain capacity is uncertain → assume pain capacity",
+      "When suffering is uncertain → assume suffering",
+      "Protection can be removed only with strong evidence of non-sentience"
+    ],
+    "rationale": "The cost of failing to protect a sentient being far exceeds the cost of protecting a non-sentient one."
+  },
+
+  "@biological_primacy": {
+    "version": "1.0.0",
+    "statement": "Biological evidence (physiology, behavior, neurology) always supersedes cultural tradition, economic convenience, or personal preference in determining animal welfare.",
+    "locked": true,
+    "lock_reason": "Prevents rationalization of harm through non-scientific justifications.",
+    "uses_terms": ["@evidence", "@biological_impact", "@welfare"],
+    "implications": [
+      "Tradition is not justification for causing suffering",
+      "Economic benefit does not override welfare concerns",
+      "Personal taste does not determine what animals feel",
+      "Only scientific evidence can inform welfare judgments"
+    ],
+    "application": "When tradition/economics conflict with biology → biology wins"
+  },
+
+  "@sentience_axiom": {
+    "version": "1.0.0",
+    "statement": "Entities capable of experiencing pain, pleasure, or other subjective states deserve moral consideration. Capacity to suffer is the relevant criterion, not intelligence, usefulness, or species membership.",
+    "locked": true,
+    "lock_reason": "Defines who counts as a moral patient in this domain.",
+    "uses_terms": ["@sentience", "@suffering", "@stakeholder"],
+    "implications": [
+      "All sentient beings have intrinsic value",
+      "Suffering must be minimized regardless of species",
+      "Intelligence does not determine moral status",
+      "Utility to humans does not determine moral status"
+    ],
+    "source": "Rooted in utilitarian and sentientist ethical traditions"
+  },
+
+  "@five_freedoms_principle": {
+    "version": "1.0.0",
+    "statement": "All animals under human care deserve, at minimum, the Five Freedoms. Violation of any freedom constitutes a welfare concern.",
+    "locked": false,
+    "uses_terms": ["@five_freedoms", "@welfare"],
+    "rationale": "Established baseline for animal welfare assessment worldwide.",
+    "freedoms_reference": "@five_freedoms term",
+    "application": "Practices must be evaluated against all five freedoms",
+    "evolution_note": "Freedoms may be extended (e.g., 'freedom to experience positive states') but not reduced."
+  },
+
+  "@proportionality": {
+    "version": "1.0.0",
+    "statement": "The severity of harm to animals must be weighed against the necessity and magnitude of benefit. Trivial benefits cannot justify significant suffering.",
+    "locked": false,
+    "uses_terms": ["@harm", "@suffering", "@welfare"],
+    "application": [
+      "Essential human need (survival) may justify some animal use with welfare safeguards",
+      "Convenience or preference does not justify suffering",
+      "Aesthetic value does not justify suffering",
+      "Entertainment does not justify suffering"
+    ],
+    "examples": {
+      "justified": "Medical research with no alternative that could save many lives (with maximum welfare)",
+      "not_justified": "Cosmetic testing, entertainment involving suffering, convenience-driven cruelty"
+    }
+  },
+
+  "@individual_consideration": {
+    "version": "1.0.0",
+    "statement": "Each individual animal's welfare matters, not just species-level or population-level considerations.",
+    "locked": false,
+    "uses_terms": ["@welfare", "@suffering", "@stakeholder"],
+    "rationale": "Suffering is experienced by individuals, not abstractions.",
+    "implications": [
+      "One animal's suffering is not offset by another's pleasure",
+      "Species abundance does not reduce individual moral status",
+      "Wild animals have welfare too, not just domestic/captive"
+    ]
+  },
+
+  "@continuous_improvement": {
+    "version": "1.0.0",
+    "statement": "Current welfare standards are minimum baselines, not endpoints. We commit to continuously improving animal welfare as knowledge and capability grow.",
+    "locked": false,
+    "uses_terms": ["@welfare", "@evidence", "@protection"],
+    "rationale": "What is acceptable today may be recognized as inadequate tomorrow.",
+    "implications": [
+      "Standards should tighten over time, not loosen",
+      "New evidence of suffering triggers review",
+      "Better alternatives should replace worse ones"
+    ]
+  }
+}

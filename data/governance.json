@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "type": "governance",
+    "domain": "animal-welfare",
+    "inherits": "dahao-org/core v1.0.0",
+    "description": "Governance configuration for DAHAO Animal Welfare domain.",
+    "version": "1.0.0",
+    "created": "2024-12-13",
+    "updated": "2024-12-13"
+  },
+
+  "instance": {
+    "id": "animal-welfare",
+    "name": "DAHAO Animal Welfare",
+    "type": "domain",
+    "purpose": "Minimize animal suffering through evidence-based ethics",
+    "repository": "https://github.com/dahao-org/animal-welfare",
+    "core_dependency": "https://github.com/dahao-org/core",
+    "core_version": "1.0.0",
+    "created": "2024-12-13",
+    "maintainers": [
+      {
+        "id": "dahao-org",
+        "type": "organization",
+        "github": "dahao-org",
+        "role": "steward"
+      }
+    ]
+  },
+
+  "versioning": {
+    "current": {
+      "terms": "1.0.0",
+      "principles": "1.0.0",
+      "rules": "1.0.0",
+      "governance": "1.0.0"
+    },
+    "core_inherited": "1.0.0"
+  },
+
+  "consensus": {
+    "note": "Inherits core thresholds, with domain-specific additions",
+    "inherits": "dahao-org/core governance.consensus",
+    "domain_additions": {
+      "species_addition": 0.66,
+      "species_modification": 0.66,
+      "species_removal": 0.99,
+      "practice_addition": 0.66,
+      "practice_modification": 0.66,
+      "practice_verdict_change": 0.75
+    }
+  },
+
+  "timing": {
+    "inherits": "dahao-org/core governance.timing",
+    "domain_additions": {
+      "species_discussion_days": 5,
+      "practice_discussion_days": 7
+    }
+  },
+
+  "automation": {
+    "inherits": "dahao-org/core governance.automation",
+    "domain_additions": {
+      "auto_sentience_check": true,
+      "auto_five_freedoms_check": true,
+      "llm_research_allowed": true,
+      "llm_proposal_drafting_allowed": true
+    }
+  },
+
+  "locked_items": {
+    "inherits_from_core": [
+      "@purpose_primacy",
+      "@democratic_evolution",
+      "@transparency",
+      "@precautionary_default",
+      "@protection_asymmetry",
+      "@inheritance_integrity"
+    ],
+    "domain_locked_principles": [
+      "@precautionary_principle",
+      "@biological_primacy",
+      "@sentience_axiom"
+    ],
+    "domain_locked_rules": [],
+    "domain_locked_terms": []
+  },
+
+  "knowledge_base": {
+    "species_directory": "data/species/",
+    "practices_directory": "data/practices/",
+    "schema_validation": true,
+    "auto_versioning": true
+  },
+
+  "contribution_requirements": {
+    "species_proposal": {
+      "required_fields": ["common_name", "scientific_name", "sentience_evidence", "sources"],
+      "minimum_evidence_tier": "C",
+      "minimum_sources": 1
+    },
+    "practice_proposal": {
+      "required_fields": ["name", "target_species", "biological_impacts", "sources"],
+      "minimum_evidence_tier": "C",
+      "minimum_sources": 1
+    }
+  }
+}

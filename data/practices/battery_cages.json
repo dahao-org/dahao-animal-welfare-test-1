@@ -1,0 +1,128 @@
+{
+  "_meta": {
+    "type": "practice_profile",
+    "version": "1.0.0",
+    "created": "2024-12-13",
+    "updated": "2024-12-13",
+    "status": "accepted",
+    "proposal": "Initial seed data"
+  },
+
+  "name": "Battery Cages",
+  "description": "Housing system for egg-laying hens where multiple birds are kept in small wire cages, typically providing 300-500 cm² per bird, preventing most natural behaviors.",
+
+  "target_species": ["chicken"],
+  "industry": "Egg production",
+
+  "biological_impacts": [
+    {
+      "impact": "Severe movement restriction",
+      "evidence": "Cages provide less than 500 cm² per bird, preventing wing spreading, walking, and turning",
+      "source": "Lay et al. (2011) Poultry Science"
+    },
+    {
+      "impact": "Skeletal disorders",
+      "evidence": "High rates of osteoporosis, bone fractures from inactivity",
+      "source": "Webster (2004) Animal Welfare"
+    },
+    {
+      "impact": "Behavioral deprivation",
+      "evidence": "Cannot perform dust bathing, foraging, nesting, perching",
+      "source": "Appleby et al. (2004) Poultry Behaviour and Welfare"
+    },
+    {
+      "impact": "Chronic stress",
+      "evidence": "Elevated corticosterone levels compared to free-range systems",
+      "source": "Shini et al. (2008) Poultry Science"
+    },
+    {
+      "impact": "Feather loss and pecking injuries",
+      "evidence": "Higher rates of feather damage and cannibalism",
+      "source": "Nicol et al. (2006) World's Poultry Science Journal"
+    }
+  ],
+
+  "five_freedoms_assessment": {
+    "freedom_from_hunger_thirst": {
+      "status": "MET",
+      "notes": "Food and water typically provided"
+    },
+    "freedom_from_discomfort": {
+      "status": "VIOLATED",
+      "notes": "Wire flooring causes foot problems; no comfortable resting area"
+    },
+    "freedom_from_pain_injury": {
+      "status": "VIOLATED",
+      "notes": "High rates of bone fractures, foot lesions, feather damage"
+    },
+    "freedom_to_express_normal_behavior": {
+      "status": "VIOLATED",
+      "notes": "Cannot dust bathe, forage, nest, perch, or spread wings"
+    },
+    "freedom_from_fear_distress": {
+      "status": "VIOLATED",
+      "notes": "Chronic stress documented; cannot escape aggressive cage-mates"
+    }
+  },
+
+  "freedoms_violated": 4,
+  "freedoms_met": 1,
+
+  "ethical_verdict": "UNETHICAL",
+
+  "verdict_justification": "Battery cages violate 4 of 5 freedoms. The practice causes documented suffering including chronic stress, skeletal disorders, behavioral deprivation, and injuries. No essential benefit justifies this level of harm (egg production can use higher-welfare systems). Per @proportionality, convenience and cost reduction do not override welfare. Per @biological_primacy, tradition and economics cannot justify suffering.",
+
+  "violations": [
+    "Freedom from discomfort",
+    "Freedom from pain/injury",
+    "Freedom to express normal behavior",
+    "Freedom from fear/distress"
+  ],
+
+  "recommendations": [
+    "Phase out battery cages entirely",
+    "Transition to cage-free or free-range systems",
+    "Minimum: enriched colony cages as interim improvement",
+    "Long-term: pasture-based systems"
+  ],
+
+  "alternatives": [
+    {
+      "name": "Cage-free barn",
+      "improvement": "Allows movement, dust bathing, perching",
+      "limitations": "Still indoor, density can be high"
+    },
+    {
+      "name": "Free-range",
+      "improvement": "Outdoor access, natural behaviors",
+      "limitations": "Weather exposure, predation risk"
+    },
+    {
+      "name": "Pasture-raised",
+      "improvement": "Most natural behavior expression",
+      "limitations": "Higher cost, land requirement"
+    }
+  ],
+
+  "regulatory_status": {
+    "EU": "Banned since 2012",
+    "UK": "Banned",
+    "US": "Legal in most states (some state bans)",
+    "Australia": "Phase-out in progress"
+  },
+
+  "sources": [
+    {
+      "citation": "Lay, D.C. et al. (2011). Hen welfare in different housing systems. Poultry Science.",
+      "tier": "A"
+    },
+    {
+      "citation": "Webster, A.B. (2004). Welfare implications of avian osteoporosis. Animal Welfare.",
+      "tier": "A"
+    },
+    {
+      "citation": "EFSA (2005). Opinion on the welfare aspects of various systems of keeping laying hens. EFSA Journal.",
+      "tier": "B"
+    }
+  ]
+}
