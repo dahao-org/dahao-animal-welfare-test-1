@@ -122,14 +122,14 @@
       "UNETHICAL": "Violates 2+ freedoms OR causes severe suffering for trivial benefit",
       "COMPLEX": "Violates 1 freedom OR has mixed impacts with significant benefit",
       "ETHICAL": "No freedoms violated AND no evidence of suffering",
-      "UNKNOWN": "Insufficient evidence → apply precautionary principle"
+      "UNKNOWN": "Insufficient evidence \u2192 apply precautionary principle"
     }
   },
   "@rule_stress_threshold": {
     "version": "1.0.0",
     "description": "Determine when stress indicates welfare concern.",
     "logic": {
-      "if": "cortisol > baseline × 2 AND duration > 24h",
+      "if": "cortisol > baseline \u00d7 2 AND duration > 24h",
       "then": "status = CHRONIC_STRESS, welfare_concern = TRUE"
     },
     "uses_terms": [
@@ -142,8 +142,8 @@
     ],
     "note": "Baseline varies by species. Consult species profile.",
     "acute_vs_chronic": {
-      "acute": "Brief elevation, returns to baseline — natural response",
-      "chronic": "Sustained elevation — indicates suffering"
+      "acute": "Brief elevation, returns to baseline \u2014 natural response",
+      "chronic": "Sustained elevation \u2014 indicates suffering"
     }
   },
   "@rule_biological_override_block": {
@@ -248,7 +248,7 @@
       "Five Freedoms applied"
     ],
     "adding_protection": "Per @rule_consensus_threshold: 66%",
-    "removing_protection": "Per @rule_protection_ratchet: 66% × 1.5 = 99%"
+    "removing_protection": "Per @rule_protection_ratchet: 66% \u00d7 1.5 = 99%"
   },
   "@rule_evidence_for_welfare_claims": {
     "version": "1.0.0",

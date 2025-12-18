@@ -39,7 +39,7 @@
       "HIGH": "Multiple strong indicators across categories",
       "MEDIUM": "Some indicators present, others uncertain",
       "LOW": "Few indicators, mostly behavioral",
-      "UNKNOWN": "Insufficient evidence — apply precautionary principle"
+      "UNKNOWN": "Insufficient evidence \u2014 apply precautionary principle"
     },
     "source": "Cambridge Declaration on Consciousness (2012)"
   },
