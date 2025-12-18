@@ -1,8 +1,8 @@
 {
   "_meta": {
     "type": "rules",
-    "domain": "animal-welfare",
-    "inherits": "dahao-org/core v1.1.0",
+    "domain": "animal-welfare-test-1",
+    "inherits": "dahao-org/core-test-1 v1.1.0",
     "purpose": "Minimize animal suffering through evidence-based ethics",
     "description": "Decision rules for animal welfare assessment, extending core governance rules.",
     "version": "1.1.0",
@@ -10,7 +10,6 @@
     "updated": "2024-12-13",
     "note": "All core governance rules apply. Domain rules add welfare-specific logic. Rules reference terms via 'uses_terms' and principles via 'implements_principles'."
   },
-
   "_inherited_rules": [
     "@rule_proposal_process",
     "@rule_consensus_threshold",
@@ -23,7 +22,6 @@
     "@rule_reference_validity",
     "@rule_version_bump"
   ],
-
   "@rule_sentience_assessment": {
     "version": "1.0.0",
     "description": "How to determine if a species deserves welfare consideration.",
@@ -32,8 +30,16 @@
       "then": "sentience_status = LIKELY, protection = REQUIRED",
       "if_none": "sentience_status = UNKNOWN, apply @precautionary_principle, protection = REQUIRED"
     },
-    "uses_terms": ["@sentience", "@nociception", "@stress_indicators", "@species_profile"],
-    "implements_principles": ["@precautionary_principle", "@sentience_axiom"],
+    "uses_terms": [
+      "@sentience",
+      "@nociception",
+      "@stress_indicators",
+      "@species_profile"
+    ],
+    "implements_principles": [
+      "@precautionary_principle",
+      "@sentience_axiom"
+    ],
     "indicators_checked": [
       "nociceptors_present",
       "avoidance_learning",
@@ -49,7 +55,6 @@
     },
     "output": "Species profile with sentience_confidence and protection_status"
   },
-
   "@rule_nociceptor_trigger": {
     "version": "1.0.0",
     "description": "Presence of nociceptors triggers pain capacity assumption.",
@@ -57,11 +62,15 @@
       "if": "species has documented nociceptors",
       "then": "pain_capacity = LIKELY, protection_required = TRUE"
     },
-    "uses_terms": ["@nociception", "@sentience"],
-    "implements_principles": ["@precautionary_principle"],
+    "uses_terms": [
+      "@nociception",
+      "@sentience"
+    ],
+    "implements_principles": [
+      "@precautionary_principle"
+    ],
     "rationale": "Nociceptors are pain-sensing neurons. Their presence is strong evidence for pain capacity."
   },
-
   "@rule_five_freedoms_check": {
     "version": "1.0.0",
     "description": "Evaluate practices against Five Freedoms baseline.",
@@ -70,15 +79,24 @@
       "check": "Does practice violate this freedom?",
       "if_any_violated": "welfare_concern = TRUE, violations = [list]"
     },
-    "uses_terms": ["@five_freedoms", "@practice", "@welfare"],
-    "implements_principles": ["@five_freedoms_principle"],
+    "uses_terms": [
+      "@five_freedoms",
+      "@practice",
+      "@welfare"
+    ],
+    "implements_principles": [
+      "@five_freedoms_principle"
+    ],
     "output": {
-      "freedoms_met": ["list of met freedoms"],
-      "freedoms_violated": ["list of violated freedoms"],
+      "freedoms_met": [
+        "list of met freedoms"
+      ],
+      "freedoms_violated": [
+        "list of violated freedoms"
+      ],
       "overall_status": "COMPLIANT | PARTIAL | NON_COMPLIANT"
     }
   },
-
   "@rule_practice_evaluation": {
     "version": "1.0.0",
     "description": "Determine ethical verdict for a practice.",
@@ -89,8 +107,17 @@
       "step_4": "Apply proportionality test (benefit vs harm)",
       "step_5": "Check for tradition/economic override attempts (@biological_primacy)"
     },
-    "uses_terms": ["@practice", "@ethical_verdict", "@biological_impact", "@five_freedoms"],
-    "implements_principles": ["@biological_primacy", "@proportionality", "@five_freedoms_principle"],
+    "uses_terms": [
+      "@practice",
+      "@ethical_verdict",
+      "@biological_impact",
+      "@five_freedoms"
+    ],
+    "implements_principles": [
+      "@biological_primacy",
+      "@proportionality",
+      "@five_freedoms_principle"
+    ],
     "verdict_determination": {
       "UNETHICAL": "Violates 2+ freedoms OR causes severe suffering for trivial benefit",
       "COMPLEX": "Violates 1 freedom OR has mixed impacts with significant benefit",
@@ -98,7 +125,6 @@
       "UNKNOWN": "Insufficient evidence → apply precautionary principle"
     }
   },
-
   "@rule_stress_threshold": {
     "version": "1.0.0",
     "description": "Determine when stress indicates welfare concern.",
@@ -106,15 +132,20 @@
       "if": "cortisol > baseline × 2 AND duration > 24h",
       "then": "status = CHRONIC_STRESS, welfare_concern = TRUE"
     },
-    "uses_terms": ["@stress_indicators", "@suffering", "@welfare"],
-    "implements_principles": ["@precautionary_principle"],
+    "uses_terms": [
+      "@stress_indicators",
+      "@suffering",
+      "@welfare"
+    ],
+    "implements_principles": [
+      "@precautionary_principle"
+    ],
     "note": "Baseline varies by species. Consult species profile.",
     "acute_vs_chronic": {
       "acute": "Brief elevation, returns to baseline — natural response",
       "chronic": "Sustained elevation — indicates suffering"
     }
   },
-
   "@rule_biological_override_block": {
     "version": "1.0.0",
     "description": "Reject justifications that conflict with biological evidence.",
@@ -123,8 +154,14 @@
       "and": "biological_evidence shows suffering",
       "then": "justification = REJECTED"
     },
-    "uses_terms": ["@biological_impact", "@suffering", "@evidence"],
-    "implements_principles": ["@biological_primacy"],
+    "uses_terms": [
+      "@biological_impact",
+      "@suffering",
+      "@evidence"
+    ],
+    "implements_principles": [
+      "@biological_primacy"
+    ],
     "examples": {
       "rejected": [
         "'We've always done it this way' (tradition)",
@@ -139,12 +176,18 @@
       ]
     }
   },
-
   "@rule_species_profile_requirements": {
     "version": "1.0.0",
     "description": "Requirements for adding a species to knowledge base.",
-    "uses_terms": ["@species_profile", "@sentience", "@evidence"],
-    "implements_principles": ["@precautionary_principle", "@evidence_based"],
+    "uses_terms": [
+      "@species_profile",
+      "@sentience",
+      "@evidence"
+    ],
+    "implements_principles": [
+      "@precautionary_principle",
+      "@evidence_based"
+    ],
     "required_fields": [
       "common_name",
       "scientific_name",
@@ -159,12 +202,19 @@
     },
     "auto_protection": "Any added species receives protection by default"
   },
-
   "@rule_practice_profile_requirements": {
     "version": "1.0.0",
     "description": "Requirements for adding a practice to knowledge base.",
-    "uses_terms": ["@practice", "@biological_impact", "@ethical_verdict", "@evidence"],
-    "implements_principles": ["@evidence_based", "@transparency"],
+    "uses_terms": [
+      "@practice",
+      "@biological_impact",
+      "@ethical_verdict",
+      "@evidence"
+    ],
+    "implements_principles": [
+      "@evidence_based",
+      "@transparency"
+    ],
     "required_fields": [
       "name",
       "description",
@@ -179,12 +229,18 @@
       "impacts": "Must have evidence, not assumptions"
     }
   },
-
   "@rule_protection_scope": {
     "version": "1.0.0",
     "description": "Define what 'protection' means in this domain.",
-    "uses_terms": ["@protection", "@welfare", "@five_freedoms"],
-    "implements_principles": ["@protection_asymmetry", "@precautionary_principle"],
+    "uses_terms": [
+      "@protection",
+      "@welfare",
+      "@five_freedoms"
+    ],
+    "implements_principles": [
+      "@protection_asymmetry",
+      "@precautionary_principle"
+    ],
     "protection_includes": [
       "Recognition of sentience/pain capacity",
       "Welfare requirements documented",
@@ -194,12 +250,18 @@
     "adding_protection": "Per @rule_consensus_threshold: 66%",
     "removing_protection": "Per @rule_protection_ratchet: 66% × 1.5 = 99%"
   },
-
   "@rule_evidence_for_welfare_claims": {
     "version": "1.0.0",
     "description": "Evidence requirements specific to animal welfare claims.",
-    "uses_terms": ["@evidence", "@sentience", "@suffering"],
-    "implements_principles": ["@evidence_based", "@precautionary_principle"],
+    "uses_terms": [
+      "@evidence",
+      "@sentience",
+      "@suffering"
+    ],
+    "implements_principles": [
+      "@evidence_based",
+      "@precautionary_principle"
+    ],
     "claim_types": {
       "sentience_claim": {
         "minimum_tier": "B",

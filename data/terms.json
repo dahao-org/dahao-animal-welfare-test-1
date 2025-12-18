@@ -1,15 +1,14 @@
 {
   "_meta": {
     "type": "terms",
-    "domain": "animal-welfare",
-    "inherits": "dahao-org/core v1.0.0",
+    "domain": "animal-welfare-test-1",
+    "inherits": "dahao-org/core-test-1 v1.0.0",
     "purpose": "Minimize animal suffering through evidence-based ethics",
     "description": "Animal welfare vocabulary extending DAHAO Core terms.",
     "version": "1.0.0",
     "created": "2024-12-13",
     "updated": "2024-12-13"
   },
-
   "@sentience": {
     "version": "1.0.0",
     "definition": "The capacity to have subjective experiences and feel valenced states such as pain, pleasure, or emotions.",
@@ -43,7 +42,6 @@
     },
     "source": "Cambridge Declaration on Consciousness (2012)"
   },
-
   "@suffering": {
     "version": "1.0.0",
     "definition": "A prolonged negative affective state involving distress, pain, or deprivation. Distinct from brief acute pain.",
@@ -59,7 +57,6 @@
     "duration": "Persisting beyond immediate stimulus",
     "note": "Suffering is what we aim to minimize. See @purpose."
   },
-
   "@welfare": {
     "version": "1.0.0",
     "definition": "The physical and psychological state of an animal in relation to its ability to cope with its environment and express natural behaviors.",
@@ -70,7 +67,6 @@
     ],
     "assessment": "Measured through @suffering indicators, @five_freedoms compliance, and species-specific needs."
   },
-
   "@nociception": {
     "version": "1.0.0",
     "definition": "The sensory nervous system's response to potentially harmful stimuli, detected by nociceptors.",
@@ -78,21 +74,32 @@
     "evidence_value": "Presence of nociceptors is strong evidence for potential sentience.",
     "note": "Per @precautionary_principle, nociceptor presence triggers protection."
   },
-
   "@stress_indicators": {
     "version": "1.0.0",
     "definition": "Measurable biological markers indicating physiological or psychological distress.",
     "markers": {
-      "hormonal": ["Cortisol levels", "Corticosterone", "Adrenaline"],
-      "physiological": ["Heart rate variability", "Immune function", "Body temperature"],
-      "behavioral": ["Stereotypies", "Aggression", "Withdrawal", "Abnormal postures"]
+      "hormonal": [
+        "Cortisol levels",
+        "Corticosterone",
+        "Adrenaline"
+      ],
+      "physiological": [
+        "Heart rate variability",
+        "Immune function",
+        "Body temperature"
+      ],
+      "behavioral": [
+        "Stereotypies",
+        "Aggression",
+        "Withdrawal",
+        "Abnormal postures"
+      ]
     },
     "thresholds": {
       "acute_stress": "Temporary elevation, returns to baseline",
       "chronic_stress": "Sustained elevation (>24h) or repeated acute episodes"
     }
   },
-
   "@five_freedoms": {
     "version": "1.0.0",
     "definition": "Five fundamental welfare requirements for animals under human care.",
@@ -121,7 +128,6 @@
     "source": "Farm Animal Welfare Council (1979)",
     "evolution_note": "Can be extended (add freedoms) but not reduced per @protection_asymmetry"
   },
-
   "@species_profile": {
     "version": "1.0.0",
     "definition": "Comprehensive documentation of a species' sentience evidence, welfare requirements, and relevant research.",
@@ -142,7 +148,6 @@
     ],
     "storage": "data/species/{name}.json"
   },
-
   "@practice": {
     "version": "1.0.0",
     "definition": "A human activity that affects animal welfare, subject to ethical assessment.",
@@ -154,10 +159,14 @@
       "ethical_verdict",
       "sources"
     ],
-    "verdict_options": ["ETHICAL", "UNETHICAL", "COMPLEX", "UNKNOWN"],
+    "verdict_options": [
+      "ETHICAL",
+      "UNETHICAL",
+      "COMPLEX",
+      "UNKNOWN"
+    ],
     "storage": "data/practices/{name}.json"
   },
-
   "@ethical_verdict": {
     "version": "1.0.0",
     "definition": "Assessment of a practice's alignment with animal welfare principles.",
@@ -169,7 +178,6 @@
     },
     "determination": "Based on @five_freedoms compliance, @suffering indicators, and @biological_primacy"
   },
-
   "@biological_impact": {
     "version": "1.0.0",
     "definition": "Measurable effects of a practice on animal biology and behavior.",
