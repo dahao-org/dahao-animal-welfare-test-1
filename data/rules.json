@@ -281,5 +281,25 @@
       }
     },
     "asymmetry": "Claims that remove protection require stronger evidence than claims that add it"
+  },
+  "@rule_periodic_species_review": {
+    "version": "1.0.0",
+    "description": "Mandate periodic review of species profiles for updated scientific evidence on sentience and welfare.",
+    "logic": {
+      "every": "12 months",
+      "review_target": "species_profiles with sentience_confidence 'LOW' or 'UNKNOWN'",
+      "action": "Re-evaluate sentience indicators and welfare requirements using current scientific literature. Propose updates if new evidence changes confidence level or protection needs."
+    },
+    "uses_terms": [
+      "@species_profile",
+      "@sentience",
+      "@evidence",
+      "@welfare"
+    ],
+    "implements_principles": [
+      "@continuous_improvement",
+      "@precautionary_principle"
+    ],
+    "note": "A comprehensive review process is essential for maintaining the scientific rigor and ethical responsibility of the DAHAO framework. This rule ensures that our understanding of animal sentience and welfare protections evolves alongside scientific discovery."
   }
 }
