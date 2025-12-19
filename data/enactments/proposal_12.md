@@ -1,7 +1,5 @@
 # Establish @rule_periodic_species_review for Continuous Welfare Improvement
 
-## [THESIS]
-
 **Objective**
 Introduce a new rule, `@rule_periodic_species_review`, to mandate the periodic review of existing `@species_profile` entries, especially those with 'UNKNOWN' or 'LOW' sentience confidence, to integrate new scientific evidence and ensure the framework continuously improves its welfare assessments.
 
@@ -12,4 +10,4 @@ Introduce a new rule, `@rule_periodic_species_review`, to mandate the periodic r
 4.  **Proactive protection:** Instead of waiting for a specific event, this rule establishes a proactive mechanism to identify and update welfare protections based on evolving evidence.
 
 **Proposed Change**
-Add a new rule to `data/rules.json` that mandates periodic review of species profiles for updated scientific evidence on sentience and welfare. This rule specifically targets profiles with 'LOW' or 'UNKNOWN' sentience confidence every 12 months, requiring re-evaluation using current scientific literature and proposing updates if new evidence changes confidence level or protection needs.
+Add the following new rule to `data/rules.json`.
