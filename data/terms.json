@@ -7,10 +7,10 @@
     "description": "Animal welfare vocabulary extending DAHAO Core terms.",
     "version": "1.0.0",
     "created": "2024-12-13",
-    "updated": "2023-10-27"
+    "updated": "2023-10-27T10:30:00Z"
   },
   "@sentience": {
-    "note": "Sentience assessment is evidence-based and may evolve with new research. When evidence is incomplete, disputed, or low-quality, apply `@precautionary_principle` and treat protection as required.",
+    "note": "Sentience assessment is evidence-based and may evolve with new research. When evidence is incomplete, disputed, or low-quality, apply @precautionary_principle and treat protection as required.",
     "version": "1.0.1",
     "definition": "The capacity to have subjective experiences and feel valenced states such as pain, pleasure, or emotions.",
     "indicators": {
@@ -44,7 +44,7 @@
     "source": "Cambridge Declaration on Consciousness (2012)"
   },
   "@suffering": {
-    "note": "Operational thresholds vary by species/context and should rely on welfare indicators (e.g., `@stress_indicators`) and species profiles; uncertainty triggers `@precautionary_principle`.",
+    "note": "Operational thresholds vary by species/context and should rely on welfare indicators (e.g., @stress_indicators) and species profiles; uncertainty triggers @precautionary_principle.",
     "version": "1.0.1",
     "definition": "A prolonged negative affective state involving distress, pain, or deprivation. Distinct from brief acute pain.",
     "indicators": [
@@ -178,7 +178,7 @@
     "storage": "data/practices/{name}.json"
   },
   "@ethical_verdict": {
-    "note": "Verdicts are operationalized via `@rule_practice_evaluation` (including proportionality). Use `COMPLEX` for mixed-impact/high-benefit cases with mitigation; reserve `UNETHICAL` for elimination-presumptive cases per Five Freedoms and severe/trivial-benefit logic.",
+    "note": "Verdicts are operationalized via @rule_practice_evaluation (including proportionality). Use COMPLEX for mixed-impact/high-benefit cases with mitigation; reserve UNETHICAL for elimination-presumptive cases per Five Freedoms and severe/trivial-benefit logic.",
     "version": "1.0.1",
     "definition": "Assessment of a practice's alignment with animal welfare principles.",
     "options": {
