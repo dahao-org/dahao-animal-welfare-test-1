@@ -1,5 +1,3 @@
-# Establish @rule_periodic_species_review for Continuous Welfare Improvement
-
 [THESIS]
 
 **Objective**
