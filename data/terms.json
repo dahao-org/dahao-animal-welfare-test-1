@@ -56,11 +56,15 @@
       "Abnormal behavior patterns",
       "Immune suppression",
       "Emotional fever (stress-induced hyperthermia) [Tier B+]",
-      "Emotional fever (stress-induced hyperthermia) (Tier B+ physiological studies)"
+      "Emotional fever (stress-induced hyperthermia) (Tier B+ physiological studies)",
+      "Physical pain",
+      "Chronic stress (e.g., elevated cortisol)",
+      "Fear responses (e.g., immobility, flight)",
+      "Anxiety behaviors (e.g., stereotypies, vigilance)"
     ],
     "duration": "Persisting beyond immediate stimulus",
     "_meta": {
-      "updated": "2023-10-27"
+      "updated": "YYYY-MM-DD"
     }
   },
   "@welfare": {
