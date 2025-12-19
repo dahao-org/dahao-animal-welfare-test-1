@@ -301,5 +301,31 @@
       "@precautionary_principle"
     ],
     "note": "A comprehensive review process is essential for maintaining the scientific rigor and ethical responsibility of the DAHAO framework. This rule ensures that our understanding of animal sentience and welfare protections evolves alongside scientific discovery."
+  },
+  "@rule_individual_welfare_tracking": {
+    "version": "1.0.0",
+    "description": "Requires welfare assessments to consider and track individual animal outcomes.",
+    "logic": {
+      "if": "Practice affects multiple individuals of a sentient species",
+      "then": "Welfare assessment must include data on individual variations in suffering/wellbeing",
+      "consider_for_reporting": [
+        "Range of individual stress responses",
+        "Incidence of individual injury/disease",
+        "Individual behavioral abnormalities",
+        "Outcomes for most vulnerable individuals"
+      ]
+    },
+    "uses_terms": [
+      " @welfare",
+      " @suffering",
+      " @practice",
+      " @biological_impact"
+    ],
+    "implements_principles": [
+      " @individual_consideration",
+      " @sentience_axiom",
+      " @continuous_improvement"
+    ],
+    "rationale": "Suffering is an individual experience. Group-level statistics can mask severe individual welfare deficits, contrary to @individual_consideration."
   }
 }
