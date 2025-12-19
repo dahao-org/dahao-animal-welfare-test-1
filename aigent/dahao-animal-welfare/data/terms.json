@@ -1,0 +1,11 @@
+{
+  "@suffering": {
+    "indicators": [
+      "Emotional fever (stress-induced hyperthermia) [Tier B+ physiological studies]"
+    ],
+    "version": "1.0.1",
+    "_meta": {
+      "updated": "YYYY-MM-DD"
+    }
+  }
+}
