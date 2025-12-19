@@ -1,9 +1,11 @@
 # Add salmon species profile with sentience documentation
 
-## Objective
+## THESIS
+
+**Objective**
 Create a new species profile for Atlantic salmon (*Salmo salar*) in `aigent/dahao-animal-welfare/data/species/salmon.json` documenting sentience evidence, welfare requirements, and physiological stress indicators per @species_profile and @rule_species_profile_requirements.
 
-## Rationale
+**Rationale**
 
 1.  **Evidence-Based Sentience Assessment**: Salmon demonstrate multiple, well-documented sentience indicators across neurological, behavioral, and physiological categories per @sentience:
     -   **Neurological**: Nociceptors present in skin and tissues (Sneddon et al. 2018, Broom & Sneddon 2013)
@@ -26,7 +28,7 @@ Create a new species profile for Atlantic salmon (*Salmo salar*) in `aigent/daha
     -   Subject to practices that may violate Five Freedoms (crowding, slaughter methods)
     -   Relevant to welfare assessment frameworks globally
 
-## Proposed Content (species/salmon.json)
+**Proposed Content (species/salmon.json)**
 
 ```json
 {
@@ -102,13 +104,13 @@ Create a new species profile for Atlantic salmon (*Salmo salar*) in `aigent/daha
 }
 ```
 
-## Implementation Notes
+**Implementation Notes**
 - Profile uses TIER A and TIER B evidence per @rule_evidence_for_welfare_claims
 - Sentience_confidence = HIGH meets @rule_sentience_assessment threshold (3+ indicators across 2+ categories)
 - Addition triggers automatic protection per @rule_species_profile_requirements
 - Profile enables immediate assessment of salmon aquaculture and slaughter practices under existing rules
 
-## Alignment with Framework
+**Alignment with Framework**
 - Strengthens @precautionary_principle by formalizing protection for a sentient species with significant human-imposed welfare impacts
 - Applies @biological_primacy by centering neuroscience, physiology, and behavior evidence
 - Supports @protection_asymmetry by adding a protected category without weakening existing protections
