@@ -1,4 +1,3 @@
-TASK: Convert Governance Proposal #9 into JSON edits.
 TITLE: Add epistemic-humility notes (not hedged definitions) to `@sentience`, `@suffering`, and `@ethical_verdict`
 BODY: [THESIS]
 
