@@ -190,6 +190,26 @@
         "citation": "Sheriff et al. (2011)",
         "tier": "B",
         "notes": "Demonstrated sub-2x elevations correlate with fitness costs"
+      },
+      {
+        "citation": "Morm\u00e8de et al. (2007)",
+        "tier": "B",
+        "description": "Established 1.5x cortisol as welfare-relevant threshold in domestic species"
+      },
+      {
+        "citation": "Dickens & Romero (2013)",
+        "tier": "A",
+        "description": "Meta-analysis on chronic stress physiology across taxa"
+      },
+      {
+        "citation": "Sapolsky (2004)",
+        "tier": "A",
+        "description": "Foundational work on glucocorticoid impacts on health/behavior"
+      },
+      {
+        "citation": "Sheriff et al. (2011)",
+        "tier": "B",
+        "description": "Demonstrated sub-2x elevations correlate with fitness costs"
       }
     ]
   },
