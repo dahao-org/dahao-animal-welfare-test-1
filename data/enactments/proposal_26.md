@@ -1,4 +1,6 @@
-# Strengthen @rule_stress_threshold baseline multiplier from 2x to 1.5x for earlier chronic stress detection
+## Governance Proposal #26: Strengthen @rule_stress_threshold baseline multiplier from 2x to 1.5x for earlier chronic stress detection
+
+[THESIS]
 
 **Objective**
 Modify `@rule_stress_threshold` in `data/rules.json` to lower the chronic stress detection threshold from `cortisol > baseline × 2` to `cortisol > baseline × 1.5`, enabling earlier identification of welfare concerns before suffering becomes severe.
@@ -37,10 +39,10 @@ Additionally, add a graduated alert system:
 ```
 
 **Evidence (per @rule_evidence_required)**
--   Mormède et al. (2007) - Tier B: Established 1.5x cortisol as welfare-relevant threshold in domestic species
--   Dickens & Romero (2013) - Tier A: Meta-analysis on chronic stress physiology across taxa
--   Sapolsky (2004) - Tier A: Foundational work on glucocorticoid impacts on health/behavior
--   Sheriff et al. (2011) - Tier B: Demonstrated sub-2x elevations correlate with fitness costs
+- Mormède et al. (2007) - Tier B: Established 1.5x cortisol as welfare-relevant threshold in domestic species
+- Dickens & Romero (2013) - Tier A: Meta-analysis on chronic stress physiology across taxa
+- Sapolsky (2004) - Tier A: Foundational work on glucocorticoid impacts on health/behavior
+- Sheriff et al. (2011) - Tier B: Demonstrated sub-2x elevations correlate with fitness costs
 
 **Version Update**
 Per @rule_version_bump: `@rule_stress_threshold` version 1.0.0 → 1.1.0 (minor update tightening existing parameters)
