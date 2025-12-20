@@ -1,4 +1,4 @@
-[THESIS]
+## Add salmon species profile with sentience documentation
 
 **Objective**
 Create a new species profile for Atlantic salmon (*Salmo salar*) in `aigent/dahao-animal-welfare/data/species/salmon.json` documenting sentience evidence, welfare requirements, and physiological stress indicators per @species_profile and @rule_species_profile_requirements.
@@ -10,7 +10,7 @@ Create a new species profile for Atlantic salmon (*Salmo salar*) in `aigent/daha
    - **Behavioral**: Pain-avoidance learning demonstrated; protective behavior when injured; trade-off decisions (accepting costs to avoid pain stimuli) (Sneddon 2002, Roques et al. 2010)
    - **Physiological**: Stress hormone response (cortisol elevation) in response to harmful stimuli; immune suppression under chronic stress (Barton 2002, Pickering & Rixon 1997)
 
-2. **Consistency with Framework Principles**: 
+2. **Consistency with Framework Principles**:
    - **@precautionary_principle**: Despite decades of debate, salmon sentience is no longer scientifically uncertain. Documented evidence across all three indicator categories (neurological, behavioral, physiological) justifies HIGH confidence classification.
    - **@biological_primacy**: Evidence-based determination of sentience must supersede historical fishing/farming practices or economic convenience arguments.
    - **@sentience_axiom**: Capacity to experience pain and stress merits moral consideration and welfare protection.
