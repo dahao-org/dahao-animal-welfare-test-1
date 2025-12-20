@@ -1,5 +1,7 @@
 # Expand @suffering.indicators to include physical pain, fear responses, and anxiety behaviors
 
+[THESIS]
+
 **Objective**
 Expand the `@suffering.indicators` list in `data/terms.json` to include three additional scientifically validated categories: physical pain, fear responses (e.g., immobility, flight), and anxiety behaviors (e.g., hypervigilance, scanning). These indicators complement existing markers and ensure comprehensive suffering detection.
 
@@ -30,9 +32,9 @@ Update `@suffering.version` to `"1.0.2"` and `_meta.updated` accordingly per @ru
 -   **Understanding animal welfare:** Fraser, D. (2008). Understanding animal welfare: The science in its cultural context. Wiley-Blackwell. [Tier B]
 
 **Implementation**
-- No changes to locked principles required
-- Enhances @rule_stress_threshold by providing additional trigger criteria
-- Supports @rule_practice_evaluation step 2 (document biological impacts)
-- Compatible with @rule_chronic_stress_response (Proposal #33) if enacted
+-   No changes to locked principles required
+-   Enhances @rule_stress_threshold by providing additional trigger criteria
+-   Supports @rule_practice_evaluation step 2 (document biological impacts)
+-   Compatible with @rule_chronic_stress_response (Proposal #33) if enacted
 
 This proposal only adds indicators; per @protection_asymmetry, it strengthens protections without removing any existing ones.
