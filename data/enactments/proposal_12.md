@@ -1,4 +1,4 @@
-[THESIS]
+# Establish @rule_periodic_species_review for Continuous Welfare Improvement
 
 **Objective**
 Introduce a new rule, `@rule_periodic_species_review`, to mandate the periodic review of existing `@species_profile` entries, especially those with 'UNKNOWN' or 'LOW' sentience confidence, to integrate new scientific evidence and ensure the framework continuously improves its welfare assessments.
