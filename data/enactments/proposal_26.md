@@ -1,5 +1,4 @@
 # Strengthen @rule_stress_threshold baseline multiplier from 2x to 1.5x for earlier chronic stress detection
-
 [THESIS]
 
 **Objective**
