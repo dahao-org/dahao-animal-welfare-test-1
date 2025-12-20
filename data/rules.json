@@ -126,10 +126,10 @@
     }
   },
   "@rule_stress_threshold": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Determine when stress indicates welfare concern.",
     "logic": {
-      "if": "cortisol > baseline \u00d7 2 AND duration > 24h",
+      "if": "cortisol > baseline \u00d7 1.5 AND duration > 24h",
       "then": "status = CHRONIC_STRESS, welfare_concern = TRUE"
     },
     "uses_terms": [
@@ -144,7 +144,34 @@
     "acute_vs_chronic": {
       "acute": "Brief elevation, returns to baseline \u2014 natural response",
       "chronic": "Sustained elevation \u2014 indicates suffering"
-    }
+    },
+    "graduated_thresholds": {
+      "ELEVATED": "1.25x-1.5x baseline for >24h \u2192 monitoring_required = TRUE",
+      "CHRONIC_STRESS": "1.5x+ baseline for >24h \u2192 welfare_concern = TRUE",
+      "SEVERE_STRESS": "2x+ baseline for >24h \u2192 intervention_required = TRUE"
+    },
+    "evidence": [
+      {
+        "source": "Morm\u00e8de et al. (2007)",
+        "tier": "B",
+        "notes": "Established 1.5x cortisol as welfare-relevant threshold in domestic species"
+      },
+      {
+        "source": "Dickens & Romero (2013)",
+        "tier": "A",
+        "notes": "Meta-analysis on chronic stress physiology across taxa"
+      },
+      {
+        "source": "Sapolsky (2004)",
+        "tier": "A",
+        "notes": "Foundational work on glucocorticoid impacts on health/behavior"
+      },
+      {
+        "source": "Sheriff et al. (2011)",
+        "tier": "B",
+        "notes": "Demonstrated sub-2x elevations correlate with fitness costs"
+      }
+    ]
   },
   "@rule_biological_override_block": {
     "version": "1.0.0",
