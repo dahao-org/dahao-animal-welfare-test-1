@@ -1,4 +1,4 @@
-[THESIS]
+# Establish @rule_individual_welfare_tracking to Ensure Consideration of Individual Animal Outcomes
 
 **Objective**
 Introduce a new rule, `@rule_individual_welfare_tracking`, to ensure that welfare assessments and practice evaluations explicitly consider and track individual animal outcomes, preventing individual suffering from being obscured by aggregate or species-level data.
